@@ -27,15 +27,15 @@ class Repo extends Component {
         console.log(data.language)
         return (
             <div className='h-20 m-2 rounded-lg bg-white shadow-md pl-2 pt-2'>
-                <a href={data.html_url} target='_blank' rel='noreferrer' className='font-bold text-lg truncate capitalize bg-gradient-to-r from-blue-100 to-blue-100 bg-growing-underline'>{data.name}</a>
-                <div className='font-bold text-xs break-all capitalize text-blue-300'>{data.description}</div>
+                <a href={data.html_url} target='_blank' rel='noreferrer' className='font-bold text-lg truncate capitalize bg-gradient-to-r from-green-200 to-blue-200 bg-growing-underline'>{data.name}</a>
+                <div className='font-bold text-xs text-blue-300 truncate'>{data.description}</div>
                 <div className='flex flex-rol items-center'>
                     <span className="h-6 flex items-center">
                         <svg className="flex-shrink-0 h-3 w-3" style={{ color: languagedata[data.language] }} viewBox="0 0 80 80" fill="currentColor">
                             <ellipse ry="40" rx="40" cy="40" cx="40" />
                         </svg>
                     </span>
-                    <div className='font-bold text-xs align-middle capitalize text-black ml-1'>{data.language}</div>
+                    <div className='font-bold text-xs capitalize text-black ml-1'>{data.language}</div>
                 </div>
             </div>
         );

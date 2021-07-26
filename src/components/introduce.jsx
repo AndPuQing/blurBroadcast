@@ -4,17 +4,18 @@ class Introduce extends Component {
         return (
             <div className="bg-gradient-to-tl from-green-400 to-blue-400 h-30 w-1/2 rounded-lg p-5 m-5 shadow-lg">
                 <div className='text-5xl font-bold text-white mb-3 mt-6 font-sertf'>
-                    <p>Hi, I'm PuQing</p>
+                    <p>Hi👋, I'm PuQing</p>
                 </div>
-                <div className='text-xl font-bold text-white tracking-wide'>
-                    <p>I write interesting Bug. I am an alchemist from the magical of China.
-                        Now studying at a <a rel='noreferrer' className='bg-gradient-to-tl  from-blue-200 to-blue-100 bg-growing-underline' href='https://www.guet.edu.cn/' target='_blank'>
-                            Gay Electronic Science and Technology University</a>. This is my first open source project.There may be many questions.</p>
-
-
-
+                <div className='text-2xl font-bold text-white tracking-wide inline-block'>
+                    I'm an undergraduate student studying Computer Science and Technology at the
+                    <p className='italic inline'>&nbsp;Gay Electronic Science and Technology University
+                    </p>&zwj;
+                    (<a rel='noreferrer' className='bg-gradient-to-tl from-blue-200 to-blue-100 bg-growing-underline' href='https://www.guet.edu.cn/' target='_blank'>
+                        GUET
+                    </a>).
+                    asdaf
                 </div>
-                <img  className='absolute -top-0 left-10 h-16 w-16 rounded-full' src={require('../image/1627146470321.jpg').default} alt='error'></img>
+                <img className='absolute -top-0 left-10 h-16 w-16 rounded-full' src={require('../image/1627146470321.jpg').default} alt='error'></img>
             </div>
         );
     }

@@ -4,8 +4,8 @@ import Repo from './repo';
 class Reposlist extends Component {
     render() {
         return (
-            <div className='h-30 w-1/2 rounded-lg p-5 m-5 bg-gradient-to-tr from-green-400 via-blue-200 to-pink-200 shadow-lg'>
-                <div className='font-bold text-2xl text-blue-700 m-2'>GitHub Project</div>
+            <div className='h-30 w-1/2 rounded-lg pl-5 pr-5 pb-2 pt-2 m-5 bg-gradient-to-tr from-green-400 via-blue-200 to-pink-200 shadow-lg'>
+                <div className='font-bold text-3xl text-blue-700 ml-2'>GitHub Project</div>
                 <div className='grid grid-cols-2'>
                     {this.state.banners.map((element, index) => {
                         return (
@@ -16,8 +16,10 @@ class Reposlist extends Component {
             </div>
         );
     }
+    // 生命周期
     componentDidMount() {
-        fetch("https://api.github.com/users/AndPuQing/repos")
+        // 获取repos信息，按照最后push的时间排序
+        fetch("https://api.github.com/users/AndPuQing/repos?sort=pushed")
             .then(res => res.json())
             .then(data => {
                 // 读取前六个
