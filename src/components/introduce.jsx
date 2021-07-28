@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 class Introduce extends Component {
     render() {
         return (
-            <div className="bg-gradient-to-tl from-green-400 to-blue-400 h-30 w-1/2 rounded-lg p-5 m-5 shadow-lg">
+            <div className="bg-gradient-to-tl from-green-400 to-blue-400 h-30 w-1/2 rounded-lg p-5 m-5 mr-0 shadow-lg">
                 <div className='text-5xl font-bold text-white mb-3 mt-6 font-sertf'>
                     <p>Hi👋, I'm PuQing</p>
                 </div>
@@ -13,7 +13,7 @@ class Introduce extends Component {
                     (<a rel='noreferrer' className='bg-gradient-to-tl from-blue-200 to-blue-100 bg-growing-underline' href='https://www.guet.edu.cn/' target='_blank'>
                         GUET
                     </a>).
-                    asdaf
+                    I started writing <a rel='noreferrer' className='bg-gradient-to-tl from-indigo-200 to-blue-200 bg-growing-underline' href='https://puqing.work' target='_blank'>the blog</a> arouned 2019. It has changed a lot over the years.
                 </div>
                 <img className='absolute -top-0 left-10 h-16 w-16 rounded-full' src={require('../image/1627146470321.jpg').default} alt='error'></img>
             </div>
