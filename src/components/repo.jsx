@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+// 渲染每个repo
 class Repo extends Component {
     render() {
         // 别问，问就手敲的
@@ -24,7 +24,6 @@ class Repo extends Component {
             "null": "#ffffff",
         }
         var data = this.props.data
-        console.log(data.language)
         return (
             <div className='h-20 m-2 rounded-lg bg-white shadow-md pl-2 pt-2'>
                 <a href={data.html_url} target='_blank' rel='noreferrer' className='font-bold text-lg truncate capitalize bg-gradient-to-r from-green-200 to-blue-200 bg-growing-underline'>{data.name}</a>

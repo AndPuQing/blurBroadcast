@@ -6,12 +6,15 @@ class App extends Component {
     render() {
         return (
             <div className='h-full w-full flex'>
+                {/* 介绍业 */}
                 <Introduce />
+                {/* 现在repo */}
                 <Reposlist />
+                
             </div>
         );
     }
-    
+
 }
 
 export default App;

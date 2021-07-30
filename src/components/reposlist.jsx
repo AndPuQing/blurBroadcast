@@ -16,7 +16,7 @@ class Reposlist extends Component {
             </div>
         );
     }
-    // 生命周期
+    // 在渲染前生命周期
     componentDidMount() {
         // 获取repos信息，按照最后push的时间排序
         fetch("https://api.github.com/users/AndPuQing/repos?sort=pushed")
