@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 class Introduce extends Component {
     render() {
         return (
-            <div className="bg-gradient-to-tl from-green-400 to-blue-400 h-30 w-1/2 rounded-lg p-5 m-5 mr-0 shadow-lg">
+            <div className="bg-gradient-to-tl from-green-400 to-blue-400 w-1/2 rounded-lg p-5 m-5 mr-0 shadow-lg">
                 <div className='text-5xl font-bold text-white mb-3 mt-6 font-sertf'>
                     <p>Hi👋, I'm PuQing</p>
                 </div>
