@@ -12,10 +12,10 @@ class BlogNewPage extends Component {
     }
     componentDidMount() {
         // 获取博客最新文章
-        fetch("https://puqing.work/sitemap.xml")
+        fetch("https://blog.puqing.work/sitemap.xml")
             .then(response => {
                 response.text().then(text => {
-                    var pattern = new RegExp('https://puqing.work/p/[^/]+/', 'g')
+                    var pattern = new RegExp('https://blog.puqing.work/p/[^/]+/', 'g')
                     // console.log(pattern.exec(text)[0])
                     var addr = pattern.exec(text)[0]
                     this.setState({ linkaddr: addr })
