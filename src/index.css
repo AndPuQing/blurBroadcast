@@ -13,4 +13,18 @@
     background-size: 100% 100%;
     color: #0d47a1;
   }
+  .bg_move {
+    animation: move 35s linear infinite;
+    animation-direction: alternate;
+    /* z-index:-1; */
+  }
+
+  @keyframes move {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-50%);
+    }
+  }
 }
