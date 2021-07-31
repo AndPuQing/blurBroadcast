@@ -23,7 +23,7 @@ class Reposlist extends Component {
             .then(res => res.json())
             .then(data => {
                 // 读取前六个
-                console.log(data.slice(0, 6))
+
                 this.setState({ banners: data.slice(0, 6) })
             })
     }

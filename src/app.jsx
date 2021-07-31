@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import BlogNewPage from './components/blogNewPage';
 import ContactWay from './components/contactWay';
 import Introduce from './components/introduce';
 import Reposlist from './components/reposlist';
@@ -13,8 +14,9 @@ class App extends Component {
                     {/* 现在repo */}
                     <Reposlist />
                 </div>
-                <div className='w-full flex-row'>
+                <div className='w-full flex-row flex'>
                     <ContactWay />
+                    <BlogNewPage />
                 </div>
             </div>
         );
