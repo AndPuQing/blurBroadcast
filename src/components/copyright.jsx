@@ -7,7 +7,7 @@ class Copyright extends Component {
                 <div className='h-1 bg-gray-500 w-20 rounded-lg mb-5'></div>
                 <p className='text-sm font-bold text-gray-600 cursor-default'>© 2020-2021 PuQing Site</p>
                 <p className='text-xs font-semibold text-gray-300 mt-3 cursor-default'>Built with React</p>
-                <p className='text-xs font-semibold text-gray-300 cursor-default'>Designed by Jimmy</p>
+                <p className='text-xs font-semibold text-gray-300 cursor-default'>Designed by PuQing</p>
             </div>
         );
     }

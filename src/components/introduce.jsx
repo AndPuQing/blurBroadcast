@@ -13,7 +13,7 @@ class Introduce extends Component {
                     (<a rel='noreferrer' className='bg-gradient-to-tl from-blue-200 to-blue-100 bg-growing-underline' href='https://www.guet.edu.cn/' target='_blank'>
                         GUET
                     </a>).
-                    I started writing <a rel='noreferrer' className='bg-gradient-to-tl from-indigo-200 to-blue-200 bg-growing-underline' href='https://puqing.work' target='_blank'>the blog</a>
+                    I started writing <a rel='noreferrer' className='bg-gradient-to-tl from-indigo-200 to-blue-200 bg-growing-underline' href='https://blog.puqing.work'>the blog</a>
                     &nbsp;arouned 2020. I am also trying to learn alchemy, let's work towards the direction of training SOTA's taoist medicine.
                 </div>
                 <img className='absolute -top-0 left-10 h-16 w-16 rounded-full' src={require('../image/1627146470321.jpg').default} alt='error'></img>
