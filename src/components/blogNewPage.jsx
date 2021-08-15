@@ -12,7 +12,9 @@ class BlogNewPage extends Component {
     }
     componentDidMount() {
         // 获取博客最新文章
-        fetch("https://blog.puqing.work/sitemap.xml")
+        fetch("https://blog.puqing.work/sitemap.xml", {
+            mode='no-cors'
+        })
             .then(response => {
                 response.text().then(text => {
                     var pattern = new RegExp('https://blog.puqing.work/p/[^/]+/', 'g')
