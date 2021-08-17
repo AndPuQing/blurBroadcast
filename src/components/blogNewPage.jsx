@@ -3,9 +3,9 @@ import analyze from 'rgbaster'
 class BlogNewPage extends Component {
     render() {
         return (
-            <div onClick={() => { window.open(this.state.linkaddr, '_blank') }} className='h-20 ml-2 w-2/6 mr-5 overflow-hidden rounded-lg shadow-lg relative'>
+            <div onClick={() => { window.open(this.state.linkaddr, '_blank') }} className='mt-5 ml-5 mr-5 h-28 sm:h-20 sm:ml-2 sm:w-2/6 sm:mr-5 overflow-hidden rounded-lg shadow-lg relative'>
                 <img id='blogimg' alt='loading fail' className=' w-full bg_move' />
-                <div id='text' className='text-white font-extrabold absolute text-4xl top-5 left-4 cursor-default'>最近文章</div>
+                <div id='text' className='text-white font-extrabold absolute text-5xl sm:text-4xl top-5 left-4 cursor-default'>最近文章</div>
             </div>
         );
     }
@@ -38,10 +38,10 @@ class BlogNewPage extends Component {
 
 }
 // RGB转换为16进制
-String.prototype.colorHex = function () {
+function colorHex(color) {
     // RGB颜色值的正则
     var reg = /^(rgb|RGB)/;
-    var color = this;
+    // var color = this;
     if (reg.test(color)) {
         var strHex = "0x";
         // 把RGB的3个数值变成数组
@@ -61,7 +61,7 @@ String.prototype.colorHex = function () {
 };
 // 取补色
 function ColorReverse(OldColorValue) {
-    var ColorHex = OldColorValue.colorHex()
+    var ColorHex = colorHex(OldColorValue)
     var str = "000000" + (0xFFFFFF - ColorHex).toString(16);
     return '#' + str.substring(str.length - 6, str.length);
 }

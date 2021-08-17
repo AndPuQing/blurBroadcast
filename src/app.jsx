@@ -9,13 +9,13 @@ class App extends Component {
     render() {
         return (
             <div className='w-full h-full flex flex-col mt-4'>
-                <div className='flex flex-row w-full'>
+                <div className='flex flex-col w-full sm:flex-row'>
                     {/* 介绍业 */}
                     <Introduce />
                     {/* 现在repo */}
                     <Reposlist />
                 </div>
-                <div className='w-full flex-row flex'>
+                <div className='flex flex-col sm:w-full sm:flex-row sm:flex'>
                     <ContactWay />
                     <BlogNewPage />
                 </div>

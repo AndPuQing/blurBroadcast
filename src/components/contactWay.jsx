@@ -6,7 +6,7 @@ import ContactWayTim from './contactWayTim'
 class ContactWay extends Component {
     render() {
         return (
-            <div className='ml-5 h-auto flex flex-row space-x-2'>
+            <div className='grid grid-cols-2 ml-5 mr-5 sm:mr-0 h-auto sm:flex sm:flex-row sm:space-x-2'>
                 <ContactWayTim />
                 <ContactWayTel />
                 <ContactWayGit />
