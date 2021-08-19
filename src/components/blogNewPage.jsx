@@ -3,7 +3,7 @@ import analyze from 'rgbaster'
 class BlogNewPage extends Component {
     render() {
         return (
-            <div onClick={() => { window.open(this.state.linkaddr, '_blank') }} className='mt-5 ml-5 mr-5 h-28 sm:h-20 sm:ml-2 sm:w-2/6 sm:mr-5 overflow-hidden rounded-lg shadow-lg relative'>
+            <div onClick={() => { window.open(this.state.linkaddr, '_blank') }} className='mt-5 ml-5 mr-5 sm:mt-0 h-28 sm:h-20 sm:ml-2 sm:w-2/6 sm:mr-5 overflow-hidden rounded-lg shadow-lg relative'>
                 <img id='blogimg' alt='loading fail' className=' w-full bg_move' />
                 <div id='text' className='text-white font-extrabold absolute text-5xl sm:text-4xl top-5 left-4 cursor-default'>最近文章</div>
             </div>
